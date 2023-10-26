@@ -8,7 +8,7 @@
         회원가입(join) 11/9~11/16 기간완성 (api-주소검색, 자동등록방지) 11/23
         SHOP - SUNGLASSES 리스트 페이지 
         상품상세 페이지 11/30 ~ 12/7 
-        
+
     * 2차 프로젝트리스트(선택)
         로그인, 회원가입 DB 연동(Node JS)
 
@@ -20,8 +20,18 @@
     npx create-react-app paulhueman
     npx create-react-app .
 
-3. 
+3. 파일 폴더 생성 images/styles/component/
 
+4. font awesome 리액트 설치와 연결
+    $ npm i @fortawesome/fontawesome-svg-core
+    $ npm i @fortawesome/free-solid-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-brands-svg-icons
+    $ npm i @fortawesome/react-fontawesome
+
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+    import { 이름1, 이름2 } from '@fortawesome/free-solid-svg-icons';
+
+    <FontAwesomeIcon icon={이름1} />
+    <FontAwesomeIcon icon={이름2} />
 
 --------------------
 
