@@ -1,1 +1,65 @@
+header {
+    position:fixed; left:0; top:0;
+    z-index:999; width:100%; height:158px;
+    text-transform:uppercase;
+}
+header .top {padding:0 25px; position:relative; height:110px; display:flex; justify-content:space-between; align-items:center;}
+header .top > h1 {
+    position:absolute; left:50%; transform:translateX(-50%); 
+}
+header .top .right_box {display:flex;}
+header .top #cart {margin:0 12px; background:none;}
+header .top #cart img {width:16px;}
+header .top #search_f input {background:none; border-bottom:2px solid #111;}
+header .top #search_f input::placeholder {font-size:0.85rem; padding:4px;}
+header .top #search_f #search_btn {background:none; padding-left:10px;}
 
+/* skip */
+.global_list, .my_list {display:none !important;}
+
+header .top .global_s h1,
+header .top .right_box .my_page h2 {cursor: pointer;}
+header .top .global_list {position:absolute;}
+header .top .global_list a {
+    display:block; line-height:15px;
+    text-align:center; width:150px; margin:10px 0 0;
+}
+header .top .right_box .my_page {position:relative;}
+header .top .right_box .my_page .my_list {
+    position:absolute; width:170px; top:30px;
+    background:#555; padding:10px;
+    border-radius:5px;
+    display:flex; flex-flow:column nowrap;
+}
+header .top .right_box .my_list a {
+    color:#fff; font-size:0.9rem; margin-bottom:10px;
+}
+header .top .right_box .my_list .login {
+    border:1px solid #fff; padding:5px;
+    text-align:center; margin-bottom:0;
+}
+
+header nav {height:48px; text-align:center;}
+header nav .gnb {display:inline-flex;}
+header nav .gnb > li {position:relative; margin-right:100px;}
+header nav .gnb > li > a {display:block; line-height:48px; }
+header nav .gnb > li > a:hover::after {
+    content:''; display:block;
+    background:#222; height:5px; width:100%;
+    position:absolute; bottom:1px;
+}
+header nav .gnb > li .sub {
+    position:absolute; display:none;
+    width:200px; left:50%; transform:translateX(-50%);
+}
+header nav .gnb > li .sub a {display:block; line-height:40px;}
+
+/* footer */
+footer {position:relative; height:127px; background:#222; color:#aaa; padding:20px;}
+footer p {line-height:1.5; font-size:0.75rem; margin-bottom:30px;}
+footer .menu a {
+    font-size:0.75rem;
+    color:#aaa; margin-right:20px; text-transform:uppercase;
+}
+footer .ico {position:absolute; right:20px; bottom:20px;}
+footer .ico a {margin-left:15px;}

@@ -1,0 +1,5 @@
+main .bg {
+    background:url(../images/paulhueman_main.jpg);
+    background-size:cover;
+    height:100vh;
+}

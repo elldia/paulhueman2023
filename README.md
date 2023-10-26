@@ -33,6 +33,27 @@
     <FontAwesomeIcon icon={이름1} />
     <FontAwesomeIcon icon={이름2} />
 
+5. 이미지 연결
+    import logo from './images/logo.png'
+    import ico_basket from './images/ico_basket.png'
+
+    <h1><a href="#"><img src={logo} alt="paul hueman" /></a></h1>
+
+6. Header 컴포넌트 연결 component/Header.js
+    function Header(){ return ( /*HEader 태그붙여넣기*/ )}
+    기존 import 붙여넣기 
+    import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+    import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
+    import logo from '../images/logo.png'
+    import ico_basket from '../images/ico_basket.png'
+
+    App.js --> import Header from './component/Header'; <Header />
+
+7. footer 컴포넌트 생성
+8. public / index.html 에 title 작성 '폴휴먼'
+9. styles/app.css (header, footer) 공통파일 작성, reset 추가 연결
+10. styles/index.css (index 파일의 main) 개별파일 작성
+
 --------------------
 
 
