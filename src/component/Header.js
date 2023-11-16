@@ -3,8 +3,12 @@ import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
 import logo from '../images/logo.png'
 import ico_basket from '../images/ico_basket.png'
 
+// 각 js의 필요한 Link만 연결
+import { Link } from 'react-router-dom';
+
 function Header(){
     return (
+
         <header>
         <div className="top">
           <div className="global_s">
@@ -21,7 +25,7 @@ function Header(){
               <div className="my_list">
                 <a href="#">my account</a>
                 <a href="#">orders</a>
-                <a href="#" className="login">login</a>
+                <Link to={"/Login"} className="login">Login</Link>
               </div>
             </div>
             <button type="button" id="cart"><img src={ico_basket} alt="장바구니" /></button>

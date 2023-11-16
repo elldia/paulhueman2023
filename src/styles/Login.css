@@ -1,0 +1,38 @@
+.loginWrap {height:100vh; padding:200px 0 0;}
+.loginWrap h1 {
+    font-size:1.5rem;
+    text-align:center; padding:50px 0 30px;
+}
+.loginWrap p {
+    text-align:center; margin:0 0 50px;
+}
+.loginWrap .login {
+    width:600px; margin:0 auto;
+}
+.loginWrap .login form {}
+.loginWrap .login form fieldset {
+    display:flex; flex-flow:column nowrap;
+}
+.loginWrap .login form fieldset input {
+    padding:15px 10px; border:1px solid #eee;
+    margin:0 0 10px;
+}
+.loginWrap .login form fieldset input::placeholder {font-size:0.9rem; color:#aaa;}
+.loginWrap .login form fieldset span {
+    display:flex;
+    justify-content: space-between;
+}
+.loginWrap .login form fieldset span * {
+    width:49%; text-align:center; padding:20px 0; 
+    color:#fff; background:#222;
+}
+.loginWrap .login form fieldset span #login_btn {}
+.loginWrap .login form fieldset span #join {}
+.loginWrap .login .id_pw_search {
+    display:flex;
+    justify-content: space-between;
+    margin:30px 0 0;
+}
+.loginWrap .login .id_pw_search * {color:#888;}
+.loginWrap .login .id_pw_search span {}
+.loginWrap .login .id_pw_search a {}

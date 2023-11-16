@@ -15,7 +15,7 @@ header .top #search_f input::placeholder {font-size:0.85rem; padding:4px;}
 header .top #search_f #search_btn {background:none; padding-left:10px;}
 
 /* skip */
-.global_list, .my_list {display:none !important;}
+/* .global_list, .my_list {display:none !important;} */
 
 header .top .global_s h1,
 header .top .right_box .my_page h2 {cursor: pointer;}
