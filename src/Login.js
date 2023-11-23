@@ -1,4 +1,5 @@
 import './styles/Login.css';
+import { Link } from 'react-router-dom';
 
 function Login(){
     return(
@@ -12,7 +13,7 @@ function Login(){
                         <input type="password" placeholder="비밀번호" id="user_pw" />
                         <span>
                             <button type="submit" id="login_btn">로그인</button>
-                            <a href="#" id="join">회원가입</a>
+                            <Link to="/join" id="join">회원가입</Link>
                         </span>
                     </fieldset>
                 </form>

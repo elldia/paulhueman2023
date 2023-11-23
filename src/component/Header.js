@@ -18,14 +18,14 @@ function Header(){
               <a href="#">chn</a>
             </div>
           </div>
-          <h1><a href="#"><img src={logo} alt="paul hueman" /></a></h1>
+          <h1><Link to="/"><img src={logo} alt="paul hueman" /></Link></h1>
           <div className="right_box">
             <div className="my_page">
               <h2>마이페이지</h2>
               <div className="my_list">
                 <a href="#">my account</a>
                 <a href="#">orders</a>
-                <Link to={"/Login"} className="login">Login</Link>
+                <Link to="/Login" className="login">Login</Link>
               </div>
             </div>
             <button type="button" id="cart"><img src={ico_basket} alt="장바구니" /></button>
