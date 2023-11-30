@@ -2,14 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
 import logo from '../images/logo.png'
 import ico_basket from '../images/ico_basket.png'
+import { useState } from 'react';
 
 // 각 js의 필요한 Link만 연결
 import { Link } from 'react-router-dom';
 
 function Header(){
+    const [ Header, setHeader ] = useState(document.querySelector('header .top'));
+    console.log('Header->', Header)
     return (
-
-        <header>
+        <header className="">
         <div className="top">
           <div className="global_s">
             <h1>global shipping</h1>
@@ -18,7 +20,6 @@ function Header(){
               <a href="#">chn</a>
             </div>
           </div>
-          <h1><Link to="/"><img src={logo} alt="paul hueman" /></Link></h1>
           <div className="right_box">
             <div className="my_page">
               <h2>마이페이지</h2>
@@ -35,6 +36,9 @@ function Header(){
             </form>
           </div>
         </div>
+        <h1>
+          <Link to="/"><img src={logo} alt="paul hueman" /></Link>
+        </h1>
         <nav>
           <ul className="gnb">
             <li><a href="#">shop</a>

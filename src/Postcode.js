@@ -53,9 +53,18 @@ const toggle = () => {
             <input type='text' value={Address} readOnly placeholder="도로명 주소" name="userAddress" id="userAddress" />
             <input type='text' placeholder="상세 주소" name="detailAddress" id="detailAddress" />
             <br />
-            <Modal isOpen={isOpen} ariaHideApp={false} style={customStyles}>
-                <button type='button' onClick={()=>setIsOpen(false)} id="modalClose">{/* 닫기 */}</button>
-                <DaumPostcode onComplete={completeHandler} height="100%" />
+            <Modal 
+                isOpen={isOpen} 
+                ariaHideApp={false} 
+                style={customStyles}
+                // 내장된 스크립트 onRequestclose로 모달 배경 클릭 시 false로 변경하기(버튼 숨김 후 이걸로 처리)
+                onRequestClose={()=>setIsOpen(false)}
+            >
+                {/* <button type='button' onClick={()=>setIsOpen(false)} id="modalClose">닫기</button> */}
+                {/* <DaumPostcode onComplete={completeHandler} height="100%" /> */}
+                <div className="bbb">test</div>
+                {/* 모달 라이브러리를 사용하면 다음 우편번호 뿐만 아니라 다른 요소의
+                크기를 지정해서 사용할 수 있다.(리액트 안 라이브러리 활용 구조) */}
             </Modal>
         </div>
     )
