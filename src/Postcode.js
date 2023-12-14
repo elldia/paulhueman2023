@@ -26,15 +26,16 @@ const completeHandler = (data) => {
 const customStyles = {
     overlay: {
         display:'block',
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: 'rgba(0,0,0,0)',
     },
     content: {
       left: '0',
       margin: 'auto',
-      width: '500px',
-      height: '600px',
+      width: '400px',
+      height: '500px',
       padding: '0',
       overflow: 'hidden',
+      border:'3px solid #111',
     },
 };
 
@@ -61,8 +62,8 @@ const toggle = () => {
                 onRequestClose={()=>setIsOpen(false)}
             >
                 {/* <button type='button' onClick={()=>setIsOpen(false)} id="modalClose">닫기</button> */}
-                {/* <DaumPostcode onComplete={completeHandler} height="100%" /> */}
-                <div className="bbb">test</div>
+                <DaumPostcode onComplete={completeHandler} height="100%" />
+                {/* <div className="bbb">test</div> */}
                 {/* 모달 라이브러리를 사용하면 다음 우편번호 뿐만 아니라 다른 요소의
                 크기를 지정해서 사용할 수 있다.(리액트 안 라이브러리 활용 구조) */}
             </Modal>

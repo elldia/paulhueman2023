@@ -1,12 +1,14 @@
 /* header 서브페이지용 */
-header.top_sub {background:#222;}
+header.top_sub {
+    background:#222;
+}
 header.top_sub * {color:#fff !important;}
 header.nav_sub {border-bottom:1px solid #aaa;}
 
 /* header 메인용 */
 header {
     position:fixed; left:0; top:0;
-    z-index:999; width:100%;
+    z-index:800; width:100%;
     text-transform:uppercase;
 }
 header .top {padding:0 25px; position:relative; height:60px; display:flex; justify-content:space-between; align-items:center;}
