@@ -9,7 +9,7 @@
 .shopWrap section {
     width:calc(100% - 130px);
     display:flex; flex-flow:row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .shopWrap section .item {text-align:center; margin-bottom:50px;}
 .shopWrap section .item img {width:280px;}

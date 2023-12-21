@@ -4,6 +4,7 @@ import Home from './Home';
 import Login from './Login';
 import Join from './Join';
 import Shop from './Shop';
+import Detail from './Detail';
 
 // App.js 최상단 제어파일이니 나머지 모든 컴포넌트 연결
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -25,6 +26,8 @@ function App() {
             <Route path="/Login" element={<Login />} />
             <Route path="/Join" element={<Join />} />
             <Route path="/Shop" element={<Shop />} />
+            {/* <Route path="/Detail" element={<Detail />} /> */}
+            <Route path={"/Detail/:id"} element={<Detail />} />
           </Routes>
         </main>
         <Footer />

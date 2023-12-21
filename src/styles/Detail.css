@@ -1,0 +1,45 @@
+.shopWrap section .photo {
+    width:calc(100% - 200px);
+    text-align:center;
+}
+.shopWrap section .photo img {width:80%; margin:0 0 150px;}
+.shopWrap section .info {width:200px;}
+.shopWrap section .info h1 {font-size:1.2rem; font-weight:800;}
+.shopWrap section .info .price {font-size:0.91rem; padding:15px 0;}
+.shopWrap section .info .detail_info {
+    border-bottom:4px solid #111; padding: 0 0 10px; margin: 0 0 20px;
+}
+.shopWrap section .info .detail_info li {line-height:1.8; font-size:0.8rem;}
+.shopWrap section .info form {}
+.shopWrap section .info form .frm_info {display:flex;}
+.shopWrap section .info form .frm_info .minus,
+.shopWrap section .info form .frm_info .plus {
+    background:#eee; width:17px; height:17px;
+    border:1px solid #aaa; font-size:0.8rem;
+}
+.shopWrap section .info form .frm_info .minus {}
+.shopWrap section .info form .frm_info #num {
+    width:17px; height:17px; border:1px solid #aaa;
+    border-left:0; border-right:0;
+    text-align:center; font-size:0.7rem;
+}
+.shopWrap section .info form .frm_info .plus {}
+.shopWrap section .info form .frm_info .cart {padding:0 6px;}
+.shopWrap section .info form .frm_info .cart img {width:16px;}
+.shopWrap section .info form .frm_info .like {}
+.shopWrap section .info form .frm_info .like img {width:16px;}
+.shopWrap section .info form #buy {
+    display:block; width:100%; margin:10px 0;
+    background:#222; color:#fff; padding:10px 0;
+}
+/* .shopWrap section .info .color_list {}
+.shopWrap section .info .color_list h2 {
+    font-weight:400; font-size:0.91rem;
+    letter-spacing:1px; margin:0 0 10px;
+}
+.shopWrap section .info .color_list .list {
+    display:flex; flex-flow:row nowrap;
+}
+.shopWrap section .info .color_list .list a {}
+.shopWrap section .info .color_list .list a:first-child {margin-right:5px;}
+.shopWrap section .info .color_list .list a img {} */
