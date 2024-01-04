@@ -10,6 +10,7 @@ let data = [
         nose:22,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:2,
@@ -20,6 +21,7 @@ let data = [
         nose:23,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:3,
@@ -30,6 +32,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:4,
@@ -40,6 +43,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:5,
@@ -50,6 +54,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:6,
@@ -60,6 +65,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:7,
@@ -70,6 +76,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:8,
@@ -80,6 +87,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:9,
@@ -90,6 +98,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:10,
@@ -100,6 +109,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:11,
@@ -110,6 +120,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
     {
         id:12,
@@ -120,6 +131,7 @@ let data = [
         nose:21,
         frame:142,
         material:'acetate',
+        quantity:0,
     },
 ];
 

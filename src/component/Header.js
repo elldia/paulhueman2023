@@ -3,11 +3,15 @@ import { faMagnifyingGlass  } from '@fortawesome/free-solid-svg-icons';
 import logo from '../images/logo.png'
 import ico_basket from '../images/ico_basket.png'
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Cart from '../Cart';
+
 
 // 각 js의 필요한 Link만 연결
 import { Link } from 'react-router-dom';
 
 function Header(){
+  let { id } = useParams();
   //header_top부분 배경색 변경하기 위한 변수 지정
     const [isSwitched, setIsSwitced] = useState(false);
     //isSwitched가 (!)반대므로 false 의 반대 -> false의 부정 => true
@@ -50,9 +54,13 @@ function Header(){
                 <Link to={'/Login'} className="login" onClick={switchHandler}>Login</Link>
               </div>
             </div>
-            <button type="button" id="cart" style={{
+            <Link to={`/Cart/${id}`} 
+              id="cart" 
+              style={{
               filter:isSwitched ? 'invert(1)' : 'invert(0)'
-            }}><img src={ico_basket} alt="장바구니" /></button>
+            }}>
+              <img src={ico_basket} alt="장바구니" />
+            </Link>
             <form action="#" method="post" id="search_f">
               <input type="text" placeholder="Search" style={{
                 borderBottom:isSwitched ? '2px solid #fff': '2px solid #111',
